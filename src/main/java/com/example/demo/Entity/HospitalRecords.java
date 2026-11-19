@@ -29,7 +29,7 @@ public class HospitalRecords {
     @Column(name = "last_name", nullable = false)
     private String lastName;
 
-    @Column(name = "identification", nullable = false)
+    @Column(name = "identification", nullable = false, unique = true)
     private String identification;
 
     @Column(name = "sex", nullable = false)
